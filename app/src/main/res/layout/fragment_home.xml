@@ -1,0 +1,80 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prakharjaiswal.attendance.HomeFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/textViewUserEmail"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="34dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEditText"
+            android:hint="Enter Student Name"
+            android:layout_below="@+id/textViewUserEmail"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="34dp"
+            style="@style/Widget.AppCompat.EditText"
+            android:singleLine="true"
+            android:maxLines="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="34dp"
+            android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Class"
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_below="@+id/nameEditText"
+            android:id="@+id/spinnerClass"
+            android:spinnerMode="dropdown"
+            android:layout_height="42dp"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:scrollbarStyle="outsideInset"
+            android:outlineProvider="paddedBounds"
+            android:textAlignment="center"
+            />
+        </LinearLayout>
+
+        <Button
+            android:text="Add Student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addButton"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="34dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:elevation="3dp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</FrameLayout>
